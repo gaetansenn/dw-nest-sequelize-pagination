@@ -1,0 +1,50 @@
+{
+  "name": "dw-nest-sequelize-pagination",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next",
+    "prepublish:npm": "npm run build"
+  },
+  "dependencies": {
+    "rxjs": "^7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "13.1.0",
+    "@commitlint/config-angular": "13.1.0",
+    "@nestjs/common": "8.0.6",
+    "@nestjs/core": "^8.0.6",
+    "@nestjs/sequelize": "^8.0.0",
+    "sequelize-typescript": "^2.1.0",
+    "typescript": "4.3.5",
+    "@types/node": "14.17.9",
+    "@typescript-eslint/eslint-plugin": "4.29.0",
+    "@typescript-eslint/parser": "4.29.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.23.4",
+    "husky": "7.0.1",
+    "prettier": "2.3.2",
+    "sequelize": "6.6.2",
+    "class-validator": "0.13.1"
+  },
+  "peerDependencies": {
+    "sequelize": "6.6.2",
+    "@nestjs/common": "^8.0.0",
+    "@nestjs/core": "^8.0.0",
+    "@nestjs/sequelize": "^8.0.0",
+    "sequelize-typescript": "^2.1.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "git add -f"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -c .commitlintrc.json -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
