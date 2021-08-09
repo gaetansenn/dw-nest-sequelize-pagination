@@ -1,6 +1,6 @@
 {
   "name": "dw-nest-sequelize-pagination",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "NestJS module to handle pagination with sequelize",
   "scripts": {
     "build": "tsc -p tsconfig.json",
