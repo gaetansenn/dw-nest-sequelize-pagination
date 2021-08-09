@@ -41,9 +41,8 @@ The **forRoot()** method allow you to overide default configuration
 
 | Name          | Description                                       | Type                      | Default    |
 | ------------- | ------------------------------------------------- | ------------------------- | ---------- |
-| limit         | If you want to change default limit value         | _number_                  | `30`            |
-| offset        | If you want to change default offset value        | _number_                  | 
-`0`             |
+| limit         | If you want to change default limit value         | _number_                  | `30`       |
+| offset        | If you want to change default offset value        | _number_                  | `0`        |
 
 ### Service
 
