@@ -46,7 +46,7 @@ The **forRoot()** method allow you to overide default configuration
 
 ### Service
 
-Sequelize service overide `findAll` method from Sequelize and allow you to handle pagination automaticaly.
+Sequelize service override `findAll` method from Sequelize and allow you to handle pagination automaticaly.
 
 ```ts
 import { Injectable } from '@nestjs/common';
@@ -120,7 +120,7 @@ export class VehiclesController {
 ### Decorator 
 
 As you can see here you can overide the default pagination `limit` and `offset` for this specific route. 
-The `@Pagination` decorator also handle validation of `limit` and `offset` thanks to `ValidationPipe` feature from nestJS. By default Nestjs disable the Validation from custom decorator.
+The `@Pagination` decorator also handle validation of `limit` and `offset` thanks to `ValidationPipe` feature from nestJS. By default Nestjs disable the validation from custom decorator.
 
 #### Global `ValidationPipe`
 
