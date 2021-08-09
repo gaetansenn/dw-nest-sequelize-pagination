@@ -25,7 +25,6 @@ export const Pagination = createParamDecorator(
     (target: any, key: string) => {
       const Swagger = loadPackage('@nestjs/swagger', 'PaginationDecorator', () => require('@nestjs/swagger'))
 
-      console.log('swagger is ', Swagger);
       if (Swagger) {
         Swagger.ApiQuery({
           name: 'offset',
